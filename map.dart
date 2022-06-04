@@ -9,6 +9,8 @@ void main() {
   map2.forEach((key, value) {
     print('key: $key,value:$value');
   });
-  map1.addEntries(map2.entries);
-  print(map1);
+  print(map1.containsKey('Ananya'));
+  print(map2.containsKey('Khushi'));
+  print(map1.containsValue(79));
+  print(map2.containsValue(79));
 }
