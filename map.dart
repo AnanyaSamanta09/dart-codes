@@ -10,4 +10,6 @@ void main() {
   map2.forEach((key, value) {
     print('key: $key,value:$value');
   });
+  print('map1.keys:${map1.keys}');
+  print('map1.value:${map1.values}');
 }
