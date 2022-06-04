@@ -9,6 +9,6 @@ void main() {
   map2.forEach((key, value) {
     print('key: $key,value:$value');
   });
-  map1.putIfAbsent('Khushi', () => 45);
-  print(map1);
+  map2.remove('Puja');
+  print(map2);
 }
