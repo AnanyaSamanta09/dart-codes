@@ -9,7 +9,6 @@ void main() {
   map2.forEach((key, value) {
     print('key: $key,value:$value');
   });
-  print(map1.length);
-  print(map1.isEmpty);
-  print(map1.isNotEmpty);
+  map2.clear();
+  print(map2);
 }
