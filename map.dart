@@ -9,6 +9,8 @@ void main() {
   map2.forEach((key, value) {
     print('key: $key,value:$value');
   });
-  map2.remove('Puja');
+  map1.removeWhere((key, value) => key.startsWith('A'));
+  print(map1);
+  map2.removeWhere((key, value) => key.startsWith('S'));
   print(map2);
 }
