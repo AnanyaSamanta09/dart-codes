@@ -20,8 +20,7 @@ void main() {
   print(stringList);
   // 3. concatenate two lists of same type
 
-  stringList
-      .addAll(['Subhojeet', 'Khushbu', 'Sanket', 'Shreya', 'Suman', 'Shruti']);
+  stringList.addAll(['Subhojeet', 'Khush', 'Saket', 'Shreya1', 'Sum', 'S']);
   print(stringList);
   // 4. print size of list
 
@@ -45,4 +44,8 @@ void main() {
   print(ispossible);
 
   print(stringList.any((element) => element == 'Sneha'));
+
+  //use of sort()
+  stringList.sort((a, b) => a.length > b.length ? 1 : 0);
+  print(stringList);
 }
