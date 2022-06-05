@@ -20,9 +20,23 @@ void main() {
   print(stringList);
   // 3. concatenate two lists of same type
 
-  stringList.addAll(['Subhojeet', 'Khushbu', 'Sanket']);
+  stringList
+      .addAll(['Subhojeet', 'Khushbu', 'Sanket', 'Shreya', 'Suman', 'Shruti']);
   print(stringList);
   // 4. print size of list
 
   print(stringList.length);
+  // searching if value is present
+
+  print(stringList.contains('Vishal'));
+  print(stringList.contains('Khushi'));
+
+  //use of indexOf
+  print(stringList.indexOf('Khushi'));
+  print(stringList.indexOf('Vishal'));
+
+  //use of substring
+  List<String> sublist =
+      stringList.where((element) => element.startsWith('S')).toList();
+  print(sublist);
 }
