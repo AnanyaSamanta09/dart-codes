@@ -39,4 +39,10 @@ void main() {
   List<String> sublist =
       stringList.where((element) => element.startsWith('S')).toList();
   print(sublist);
+
+  //use of any()
+  bool ispossible = stringList.any((element) => element == 'Ananya');
+  print(ispossible);
+
+  print(stringList.any((element) => element == 'Sneha'));
 }
