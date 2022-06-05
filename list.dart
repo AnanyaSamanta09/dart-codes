@@ -16,7 +16,13 @@ void main() {
   print(stringList);
   // 2. remove element using the remove methods
 
+  stringList.remove('Vishal');
+  print(stringList);
   // 3. concatenate two lists of same type
 
+  stringList.addAll(['Subhojeet', 'Khushbu', 'Sanket']);
+  print(stringList);
   // 4. print size of list
+
+  print(stringList.length);
 }
